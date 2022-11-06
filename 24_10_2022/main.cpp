@@ -10,8 +10,16 @@ int main() {
     cout << "Podaj b: ";
     cin >> b;
 
-    x=(-b)/a;
+    if(a==0) {
+        if(b==0) {
+            cout << "nieskonczenie wiele miejsc zerowych" << endl;
+        } else {
+            cout << "nie ma miejsc zerowych" << endl;
+        }
+    } else {
+        x=(-b)/a;
     cout << "Miejsce zerowe: " << x;
+    }
 
 
     return 0;
