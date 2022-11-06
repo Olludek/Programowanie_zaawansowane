@@ -1,4 +1,5 @@
 # depslib dependency file v1.0
-1667757670 source:c:\users\ola\pulpit\programowanie_zaawansowane\24_10_2022\main.cpp
+1667759198 source:c:\users\ola\pulpit\programowanie_zaawansowane\24_10_2022\main.cpp
 	<iostream>
+	<cmath>
 
