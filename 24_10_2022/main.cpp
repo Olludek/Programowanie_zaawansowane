@@ -84,6 +84,7 @@ void kanoniczna () {
 }
 
 
+
 int main () {
     int x = 0;
 
