@@ -25,6 +25,10 @@ void fliniowa() {
     }
 
     cout << endl;
+    cout << "Postac ogolna funkcji liniowej ->  ";
+    cout << a <<"x+" << b <<"y+" << c << "=0" << endl;
+
+    cout << endl;
     cout << "Postac kierunkowa funkcji liniowej" << endl;
     y=(a*x)+b;
     cout << "y= " << y;
@@ -52,35 +56,35 @@ void fkwadratowa () {
         } else if (delta==0) {
             cout << "Jedno miejsce zerowe: x=" << -b/2*a << endl;
         } else {
-            cout << "Dwa miejsca zerowe: x1=" << x1 << " x2=" << x2 << endl;
+            cout << "Dwa miejsca zerowe: x1=" << x1 << " , " << " x2=" << x2 << endl;
         }
     } else {
-        cout << "A jest rowne 0, funkcja nie posiada rozwiazania" << endl;
+        cout << "Funkcja nie posiada rozwiazania poniewaz a=0" << endl;
     }
 }
 
 int main () {
     int x = 0;
-    while(x>2 || x<1) {
-        cout<<"MENU"<<endl;
-        cout<<"1.Funkca liniowa"<<endl;
-        cout<<"2.Funkcja kwadratowa"<<endl;
-        cout<<"Wybieram: ";
-        cin>>x;
 
-        system("cls");
+    while(x>2 || x<1) {
+    cout << "MENU"<<endl;
+    cout << "1. Funkca liniowa"<<endl;
+    cout << "2. Funkcja kwadratowa"<<endl;
+    cout << "Wybieram: ";
+    cin >> x;
+
+    system("cls");
     }
 
     switch (x) {
-       case 1:
-           fliniowa();
+        case 1:
+            fliniowa();
             break;
 
-       case 2:
-           fkwadratowa();
-           break;
-           }
-
+        case 2:
+            fkwadratowa();
+            break;
+    }
 
     system("PAUSE");
     return EXIT_SUCCESS;
